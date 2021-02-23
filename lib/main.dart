@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
                       )),
                       Expanded(
                           child: Text(
-                        'PERTANDINGAN HARI INI',
+                        'TRENDING NEWS HARI INI',
                         textAlign: TextAlign.center,
                       )),
                     ],
@@ -61,6 +61,21 @@ class MyApp extends StatelessWidget {
                   height: 200,
                   width: 300,
                   margin: EdgeInsets.all(20),
+                ),
+                Container(
+                  color: Colors.grey,
+                  alignment: Alignment.center,
+                  child: Text(
+                    'Harga Saham BTC',
+                  ),
+                ),
+                Container(
+                  color: Colors.blueGrey,
+                  alignment: Alignment.bottomCenter,
+                  child: Text("News 1",
+                      style: TextStyle(fontSize: 30, color: Colors.white)),
+                  height: 150.0,
+                  width: 300.0,
                 ),
               ],
             )));
