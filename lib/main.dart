@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -22,7 +23,27 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.red,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Scaffold(
+          appBar: AppBar(title: Text("MyApp")),
+          body:
+          
+          Container(
+              decoration: BoxDecoration(
+                color: const Color(0xff7c94b6),
+                image: const DecorationImage(
+                  image: NetworkImage(
+                      'https://i1.wp.com/harga.web.id/wp-content/uploads/bmw-m3-gtr-1.jpg?resize=680%2C300&ssl=1'),
+                  fit: BoxFit.fitWidth,
+                ),
+                border: Border.all(
+                  color: Colors.black,
+                  width: 2,
+                ),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              height: 200,
+              width: 300,
+              margin: EdgeInsets.all(20)))
     );
   }
 }
