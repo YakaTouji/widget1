@@ -26,7 +26,6 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
           appBar: AppBar(title: Text("MyApp")),
           body:
-          
           Container(
               decoration: BoxDecoration(
                 color: const Color(0xff7c94b6),
